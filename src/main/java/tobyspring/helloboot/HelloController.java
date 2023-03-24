@@ -4,9 +4,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Objects;
 
-@RestController
+
 public class HelloController {
-    private  HelloService helloService;
+    private  final HelloService helloService;
 
     public HelloController(HelloService helloService) {
         this.helloService = helloService;
